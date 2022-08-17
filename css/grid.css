@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS DEL HEADER*/
+.header{
+    display: flex;
+    background-color: #2F0F02;
+    height: 80px;
+    width: 100%; 
+    justify-content: left;
+    flex-direction: row
+}
+.header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    -webkit-text-stroke: 2px black;
+    color: #C2C7BF;
+    min-width: 140px;
+    margin-top: 15px;
+}
+.header i{
+    color: #304F69;
+    background-color: transparent;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+/*Barra de navegacion css*/
+.barra{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    flex-grow: 1;
+    text-align: right;
+}
+.barra li{
+    list-style: none;
+    display: inline-block;
+}
+.barra :hover{
+    color: #304F69;
+}
+.fa-solid:hover{
+    color: #C2C7BF;
+}
+a{
+    text-decoration: none;
+    color: #C2C7BF
+}
+
+/*CSS de los mains*/
+
+.main1{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 75px);
+    background-image: url(../img/homeimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+}
+.main2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 75px);
+    background-image: url(../img/dndcards.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+}
+.main3{
+    display: grid;
+    background-color: #C2C7BF;
+    height: 1960px
+}
+.main4{
+    display: grid;
+    background-image: url(../img/homeimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+}
+.main5{
+    display: grid;
+    background-image: url(../img/homeimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+}
+
+
+/*imagenes del product*/
+.img{
+    background-color:black;
+    border: 2px solid #304F69;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.img1{
+    background-image: url(../img/dice.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background-image: url(../img/reddice.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    background-image: url(../img/mimic.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*css de los calls*/
+/*use el mismo call para aboutus y el index*/
+.call{
+    color: #C2C7BF;
+    border: 8px solid #304F69;
+    background-color: #2F0F02;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 2/5;
+}
+.callproduct{
+    border: solid 10px #304F69;
+    background-color: #2F0F02;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.callubi{
+    border:solid 10px #304F69;
+    background-color: #2F0F02;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    height: 110px;
+}
+.callcontact{
+    border:solid 10px #304F69;
+    background-color: #2F0F02;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+/*location es el Iframe de google maps*/
+.location iframe{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+}
+/*subtitulo*/
+h2{
+    color: #304F69;
+    font-size: 37px;
+    -webkit-text-stroke: 2px black;
+}
+/*css del formulario*/
+form{
+    border: #304F69 10px solid;
+    background-color: #C2C7BF;
+    text-transform: capitalize;
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+}
+/*CSS de los footer*/
+.footer{
+    display: flex;
+    background-color: #304F69;
+    height: auto;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: #C2C7BF;
+    align-content: space-between;
+}
+.footer p{
+    align-self: baseline;
+}
+.footer div{
+    margin-top: 18px;
+    width: fit-content;
+}
+.footer p{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.footerlogo{
+    font-size: 35px;
+    color: #2F0F02;
+    background-color: transparent;
+}
+.footer .r{
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: right;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.fa-brands:hover{
+    color: #2f0f02
+}
+/*media query's*/
+@media only screen and (min-width: 434px){
+    .img{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #C2C7BF;
+    }
+    .callubi{
+        height: 80px;
+    }
+    form{
+        max-width: 400px;
+    }
+    .footer p{
+        align-self: baseline;
+    }
+    .main3{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3, 600px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .barra{
+        font-size: 16px;
+    }
+    .header i{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .call{
+        grid-column: 1/3;
+        grid-row: 2/5;
+    }
+    .footer .r{
+        margin-left: 350px;
+    }
+    .callcontact{
+        max-width: 550px;
+    }
+}
+@media only screen and (min-width: 768px){  /*resolucion de tableta*/
+    .barra{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .header h1{
+        font-size: 30px;
+        margin-left: 15px;
+        min-width: 180px;
+    }
+    .footer div{
+        text-align: center
+    }
+    .callubi{
+        width: 500px;
+    }
+}/*resolucion de escritorio*/
+@media only screen and (min-width: 1024px){ 
+    .barra{
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    .header h1{
+        font-size: 35px;
+    }
+    .header i{
+        margin-top: 20px;
+    }
+    .call{
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+    .main3{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1, 950px;
+        height: calc(100vh - 80px);
+    }
+}
