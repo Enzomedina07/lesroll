@@ -189,6 +189,7 @@ form{
 .footer div{
     margin-top: 18px;
     width: fit-content;
+    margin: 7px;
 }
 .footer p{
     font-size: 12px;
@@ -270,12 +271,14 @@ form{
     .barra{
         font-size: 22px;
         margin-right: 10px;
+        transition: all .2s ease-in-out
     }
     .header h1{
         font-size: 35px;
     }
     .header i{
         margin-top: 20px;
+        transition: all .2s ease-in-out
     }
     .call{
         grid-column: 1/2;
@@ -283,7 +286,13 @@ form{
     }
     .main3{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1, 950px;
+        grid-template-rows: 1, 1100px;
         height: calc(100vh - 80px);
+    }
+    .img{
+        transition: all .2s ease-in-out;
+    }
+    .img:hover{
+        transform: scale(1.1);
     }
 }
